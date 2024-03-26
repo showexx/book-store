@@ -5,31 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b32a87b-180c-4b59-bd2d-ac83cd3c8734" name="Changes" comment="basic-web-app">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/ManagerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/ProductsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/payload/NewProductPayload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/payload/UpdateProductPayload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/repository/InMemoryProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/service/DefaultProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/resources/messages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/resources/templates/catalogue/products/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/resources/templates/catalogue/products/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/resources/templates/catalogue/products/new_product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/resources/templates/catalogue/products/product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager-app/src/main/resources/templates/errors/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/CatalogueServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/controller/BadRequestControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/controller/ProductRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/controller/ProductsRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/controller/payload/NewProductPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/controller/payload/UpdateProductPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogue-service/src/main/resources/application-standalone.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/client/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/client/ProductsRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/client/RestClientProductsRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/config/ClientBeans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-app/src/main/resources/application-standalone.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/ManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/ManagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/payload/NewProductPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/payload/NewProductPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/payload/UpdateProductPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/payload/UpdateProductPayload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/repository/InMemoryProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/repository/InMemoryProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/service/DefaultProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/service/DefaultProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/resources/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +43,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Record" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -66,34 +70,72 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Programming/Project/book-store/manager-app/src/main/resources/templates/catalogue/products&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;09dfba436666d41f59606b6c0828e526&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowRun.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "21",
+    "last_directory_selection": "C:/Programming/Project/book-store/catalogue-service/src/main/java/showex/store",
+    "last_opened_file_path": "C:/Programming/Project/book-store/catalogue-service/src/main/java/showex/store/catalogue/controller",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "service.view.auto.scroll.to.source": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "cceb01c4c676292e3eb5457add8be2ef"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="showex.store.manager.client" />
       <recent name="showex.store.manager.service" />
       <recent name="showex.store.manager.repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Programming\Project\book-store\catalogue-service\src\main\java\showex\store\catalogue\controller" />
       <recent name="C:\Programming\Project\book-store\manager-app\src\main\resources\templates\catalogue\products" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Programming\Project\book-store\catalogue-service\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="showex.store.catalogue.service" />
+      <recent name="showex.store.catalogue.repository" />
+      <recent name="showex.store.catalogue.entity" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CatalogueServiceApplication">
+    <configuration name="CatalogueServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="standalone" />
+      <module name="catalogue-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="showex.store.catalogue.CatalogueServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="showex.store.catalogue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="standalone" />
       <module name="manager-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="showex.store.manager.ManagerApplication" />
       <extension name="coverage">
@@ -109,6 +151,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ManagerApplication" />
+        <item itemvalue="Spring Boot.CatalogueServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -127,8 +170,33 @@
       <workItem from="1710444613764" duration="4744000" />
       <workItem from="1710488362171" duration="442000" />
       <workItem from="1710488830533" duration="564000" />
-      <workItem from="1710489442233" duration="2280000" />
+      <workItem from="1710489442233" duration="2475000" />
+      <workItem from="1710608308256" duration="669000" />
+      <workItem from="1710609003422" duration="114000" />
+      <workItem from="1710609139300" duration="57000" />
+      <workItem from="1710609217093" duration="35000" />
+      <workItem from="1710609268746" duration="53000" />
+      <workItem from="1710609361215" duration="152000" />
+      <workItem from="1710609534027" duration="47000" />
+      <workItem from="1710609600503" duration="2273000" />
+      <workItem from="1710611958625" duration="4249000" />
+      <workItem from="1711465904147" duration="4749000" />
     </task>
+    <task id="LOCAL-00001" summary="basic-web-app">
+      <created>1710491785979</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710491785979</updated>
+    </task>
+    <task id="LOCAL-00002" summary="basic-web-app">
+      <created>1710491920767</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710491920767</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +205,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="3e9da599-9b6d-4a94-9d13-f3fff62e3b92">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Programming/Project/book-store/manager-app/src/main/resources" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -144,6 +237,15 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="3e9da599-9b6d-4a94-9d13-f3fff62e3b92" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="basic-web-app" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic-web-app" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

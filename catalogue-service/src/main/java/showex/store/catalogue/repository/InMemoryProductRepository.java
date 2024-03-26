@@ -1,12 +1,13 @@
-package showex.store.manager.repository;
+package showex.store.catalogue.repository;
 
 import org.springframework.stereotype.Repository;
-import showex.store.manager.entity.Product;
+import showex.store.catalogue.entity.Product;
 
 import java.util.*;
 
 @Repository
 public class InMemoryProductRepository implements ProductRepository {
+
     private final List<Product> products = Collections.synchronizedList(new LinkedList<>());
 
     @Override

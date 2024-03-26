@@ -1,9 +1,9 @@
-package showex.store.manager.service;
+package showex.store.catalogue.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import showex.store.manager.entity.Product;
-import showex.store.manager.repository.ProductRepository;
+import showex.store.catalogue.entity.Product;
+import showex.store.catalogue.repository.ProductRepository;
 
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -12,6 +12,7 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class DefaultProductService implements ProductService {
+
     private final ProductRepository productRepository;
 
     @Override

@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>showex.store</groupId>
-    <artifactId>manager-app</artifactId>
+    <artifactId>catalogue-service</artifactId>
     <version>24.1.1-SNAPSHOT</version>
 
     <properties>
@@ -27,7 +27,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -66,5 +66,5 @@
             </plugin>
         </plugins>
     </build>
-    
+
 </project>

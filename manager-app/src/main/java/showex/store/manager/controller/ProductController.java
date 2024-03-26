@@ -1,9 +1,7 @@
 package showex.store.manager.controller;
 
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.cglib.core.Local;
 import org.springframework.context.MessageSource;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -11,9 +9,10 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.*;
+import showex.store.manager.client.BadRequestException;
+import showex.store.manager.client.ProductsRestClient;
 import showex.store.manager.controller.payload.UpdateProductPayload;
 import showex.store.manager.entity.Product;
-import showex.store.manager.service.ProductService;
 
 import java.util.Locale;
 import java.util.NoSuchElementException;
@@ -22,13 +21,14 @@ import java.util.NoSuchElementException;
 @RequestMapping("catalogue/products/{productId:\\d+}")
 @RequiredArgsConstructor
 public class ProductController {
-    private final ProductService productService;
+
+    private final ProductsRestClient productsRestClient;
 
     private final MessageSource messageSource;
 
     @ModelAttribute("product")
     public Product product(@PathVariable("productId") int productId) {
-        return this.productService.findProduct(productId).orElseThrow(() -> new NoSuchElementException("catalogue.errors.product.not_found"));
+        return this.productsRestClient.findProduct(productId).orElseThrow(() -> new NoSuchElementException("catalogue.errors.product.not_found"));
     }
 
     @GetMapping
@@ -42,24 +42,21 @@ public class ProductController {
     }
 
     @PostMapping("edit")
-    public String updateProduct(@ModelAttribute(value = "product", binding = false) Product product, @Valid UpdateProductPayload payload,
-                                BindingResult bindingResult,
+    public String updateProduct(@ModelAttribute(value = "product", binding = false) Product product, UpdateProductPayload payload,
                                 Model model) {
-        if (bindingResult.hasErrors()) {
+        try {
+            this.productsRestClient.updateProduct(product.id(), payload.title(), payload.details());
+            return "redirect:/catalogue/products/%d".formatted(product.id());
+        } catch (BadRequestException exception) {
             model.addAttribute("payload", payload);
-            model.addAttribute("errors", bindingResult.getAllErrors().stream()
-                    .map(ObjectError::getDefaultMessage)
-                    .toList());
+            model.addAttribute("errors", exception.getErrors());
             return "catalogue/products/edit";
-        } else {
-            this.productService.updateProduct(product.getId(), payload.title(), payload.details());
-            return "redirect:/catalogue/products/%d".formatted(product.getId());
         }
     }
 
     @PostMapping("delete")
     public String deleteProduct(@ModelAttribute("product") Product product) {
-        this.productService.deleteProduct(product.getId());
+        this.productsRestClient.deleteProduct(product.id());
         return "redirect:/catalogue/products/list";
     }
 

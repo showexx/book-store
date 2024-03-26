@@ -1,11 +1,12 @@
-package showex.store.manager.service;
+package showex.store.catalogue.service;
 
-import showex.store.manager.entity.Product;
+import showex.store.catalogue.entity.Product;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface ProductService {
+
     List<Product> findAllProducts();
 
     Product createProduct(String title, String details);
