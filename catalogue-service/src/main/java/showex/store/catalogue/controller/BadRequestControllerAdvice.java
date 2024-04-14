@@ -21,7 +21,6 @@ public class BadRequestControllerAdvice {
 
     @ExceptionHandler(BindException.class)
     public ResponseEntity<ProblemDetail> handleBindException(BindException exception, Locale locale) {
-
         ProblemDetail problemDetail = ProblemDetail
                 .forStatusAndDetail(HttpStatus.BAD_REQUEST,
                         this.messageSource.getMessage("errors.400.title", new Object[0],
