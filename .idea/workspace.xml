@@ -4,28 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b32a87b-180c-4b59-bd2d-ac83cd3c8734" name="Changes" comment="servlet-api-rest-service">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/catalogue-service/src/main/resources/db/migration/V24_1_1__Basic_schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="5b32a87b-180c-4b59-bd2d-ac83cd3c8734" name="Changes" comment="spring-data-jpa">
+      <change afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/config/SecurityBeans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/keycloak/import/showex-store.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/config/SecurityBeans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/entity/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/entity/ShowexStoreUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/repository/BookStoreUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/security/OAuthClientHttpRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-app/src/main/resources/db/migration/V24_1_1__Basic_schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager-app/src/main/resources/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalogue-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/controller/BadRequestControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/controller/BadRequestControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/controller/ProductsRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/controller/ProductsRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/controller/payload/NewProductPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/controller/payload/NewProductPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/controller/payload/UpdateProductPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/controller/payload/UpdateProductPayload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/repository/InMemoryProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/service/DefaultProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/service/DefaultProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/java/showex/store/catalogue/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalogue-service/src/main/resources/application-standalone.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/resources/application-standalone.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogue-service/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/catalogue-service/src/main/resources/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/client/ProductsRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/client/ProductsRestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/client/RestClientProductsRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/client/RestClientProductsRestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/config/ClientBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/config/ClientBeans.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/src/main/java/showex/store/manager/controller/ProductsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager-app/src/main/resources/templates/catalogue/products/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/src/main/resources/templates/catalogue/products/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-app/src/main/resources/application-standalone.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/manager-app/src/main/resources/application-standalone.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,35 +60,37 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Programming/Project/book-store/catalogue-service/src/main/java/showex/store&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Programming/Project/book-store/catalogue-service/src/main/java/showex/store/catalogue/controller&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;cceb01c4c676292e3eb5457add8be2ef&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowRun.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "21",
+    "last_directory_selection": "C:/Programming/Project/book-store/catalogue-service/src/main/java/showex/store",
+    "last_opened_file_path": "C:/Programming/Project/book-store/manager-app",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "cceb01c4c676292e3eb5457add8be2ef"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "PostgreSQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="showex.store.manager.client" />
@@ -98,10 +98,13 @@
       <recent name="showex.store.manager.repository" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Programming\Project\book-store\manager-app" />
+      <recent name="C:\Programming\Project\book-store\manager-app\src\main\resources" />
       <recent name="C:\Programming\Project\book-store\catalogue-service\src\main\java\showex\store\catalogue\controller" />
       <recent name="C:\Programming\Project\book-store\manager-app\src\main\resources\templates\catalogue\products" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Programming\Project\book-store\manager-app\src\main\resources" />
       <recent name="C:\Programming\Project\book-store\catalogue-service\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -117,7 +120,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CatalogueServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ManagerApplication">
     <configuration name="V24_1_1__Basic_schema.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/catalogue-service/src/main/resources/db/migration/V24_1_1__Basic_schema.sql" />
       <script-mode>FILE</script-mode>
@@ -151,6 +154,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Database Script.V24_1_1__Basic_schema.sql" />
+      <item itemvalue="Spring Boot.CatalogueServiceApplication" />
+      <item itemvalue="Spring Boot.ManagerApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.CatalogueServiceApplication" />
@@ -187,7 +195,14 @@
       <workItem from="1711465904147" duration="5035000" />
       <workItem from="1712409328121" duration="3896000" />
       <workItem from="1712435602669" duration="2889000" />
-      <workItem from="1713120995857" duration="3329000" />
+      <workItem from="1713120995857" duration="3631000" />
+      <workItem from="1713201818809" duration="170000" />
+      <workItem from="1713204259030" duration="2739000" />
+      <workItem from="1713207080897" duration="4585000" />
+      <workItem from="1713296293949" duration="70000" />
+      <workItem from="1713434603880" duration="369000" />
+      <workItem from="1713434996405" duration="144000" />
+      <workItem from="1713537083575" duration="11545000" />
     </task>
     <task id="LOCAL-00001" summary="basic-web-app">
       <created>1710491785979</created>
@@ -210,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1711470971776</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="spring-data-jpa">
+      <created>1713124442482</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713124442482</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +282,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic-web-app" />
     <MESSAGE value="servlet-api-rest-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="servlet-api-rest-service" />
+    <MESSAGE value="spring-data-jpa" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring-data-jpa" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

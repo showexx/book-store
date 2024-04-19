@@ -1,6 +1,7 @@
 package showex.store.manager.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -8,6 +9,9 @@ import showex.store.manager.client.BadRequestException;
 import showex.store.manager.client.ProductsRestClient;
 import showex.store.manager.controller.payload.NewProductPayload;
 import showex.store.manager.entity.Product;
+
+import java.security.Principal;
+import java.util.logging.Logger;
 
 @Controller
 @RequiredArgsConstructor

@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="catalogue@localhost" uuid="0c009aff-6809-4302-a750-29cf7c3bfb19">
+    <data-source source="LOCAL" name="catalogue@localhost" uuid="e8480c77-c105-4737-bdb6-2a0c3df3f04e">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/catalogue</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5433/catalogue</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="catalogue-service/Hibernate" uuid="c941edc1-893e-4ae3-b5a2-52e228af772c">
+    <data-source source="LOCAL" name="manager@localhost" uuid="0e39281c-8002-4212-a67c-d447fa5c313e">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>Hibernate</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/catalogue</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5434/manager</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
